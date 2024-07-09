@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_application_ui_2/pages/homepage.dart';
 import 'package:quiz_application_ui_2/pages/intro_page.dart';
+import 'package:quiz_application_ui_2/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,  // Remove the debug banner
       initialRoute: '/',
       routes: {
-        '/': (context) => const IntroPage(),
+        '/': (context) => const SplashScreen(),
+        '/intro': (context) => const IntroPage(),
         '/homepage': (context) => const HomePage(),
       },
     );
